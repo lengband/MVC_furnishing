@@ -1,0 +1,22 @@
+//在require中requirejs===require
+require.config({
+	map:{
+		'*':{
+			css:"../lib/css.js"
+		}
+	},
+	paths:{
+		jquery:"../lib/jquery-1.12.2",
+		mvc:"../lib/MVC"
+	},
+	shim:{
+		mvc:{
+			exports:"MVC",
+			deps:[]
+		}
+	}
+})
+//注意：这个中括号里面的文件都是异步加载的,我没有在main.js引入jq,在bg加载时如果也没有传入jquery的话，按理来说它的回调函数是不能用$的，但是试验证明回调函数可以用$,这就是引文它后面的header.js加载到了jquery,requirejs特点加载既执行,所以在全局作用域下就有了$了！！
+require(["mvc","bg/bg","header/header","home/home","foot/foot","bottom/bottom","css!../lib/reset.css"],function(MVC){
+	MVC.install();
+})

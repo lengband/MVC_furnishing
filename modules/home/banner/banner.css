@@ -1,0 +1,20 @@
+.banner-img{padding: 30px;position: relative;height:400px;padding-bottom: 0px;}
+/* .banner-img:after{display: block;content: "";clear: both;} */
+.banner-img li{position: absolute;transition:opacity 800ms;opacity: 0;}
+.banner-img li.choose{opacity: 1;transition:opacity 800ms;}
+.banner-img li p{position: absolute;bottom: 8px;left:8px;background-color: #fff;padding: 8px 15px;font-size: 14px;text-align: left;display: inline;}
+
+/*小圆钮*/
+.banner .banner-btn{ width: 160px;height: 50px; margin:0 auto;padding: 10px;padding-left: 30px;}
+.banner .banner-btn li{float: left;width: 12px;height: 12px;border-radius: 50%;background-color:#454545;margin-right: 10px;margin-top: 10px;cursor: pointer;}
+.banner .banner-btn li.choose{background-color: #fff;border:3px solid #454545;width: 6px;height: 6px;}
+.banner .banner-btn li:nth-of-type(2):hover{background-color: #fff;border:3px solid #454545;width: 6px;height: 6px;}
+.banner .banner-btn li:nth-of-type(3):hover{background-color: #fff;border:3px solid #454545;width: 6px;height: 6px;}
+.banner .banner-btn li:nth-of-type(4):hover{background-color: #fff;border:3px solid #454545;width: 6px;height: 6px;}
+.banner .banner-btn li:nth-of-type(5):hover{background-color: #fff;border:3px solid #454545;width: 6px;height: 6px;}
+.banner .banner-btn li:first-child{width: 25px;height: 25px;text-align: center;line-height: 25px;color: #fff;display: table-cell;vertical-align: middle;margin-top: 4px;}
+.banner .banner-btn li:last-child{width: 25px;height: 25px;text-align: center;line-height: 25px;color: #fff;margin-top: 4px;}
+
+/*h1*/
+.banner h1{
+    font-family: 'CharisSILItalic';font-size: 21px;line-height: 31px;text-align: center;margin-bottom: -2px;color: #4d4d4d;padding:0 30px;}

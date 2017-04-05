@@ -1,0 +1,40 @@
+.bg,
+.bg .bg-item {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+.bg .bg-item {
+	position: absolute;
+	opacity: 0;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	transition: opacity 1000ms;
+}
+.bg .bg-item.choose {
+	opacity: 1;
+	transition: opacity 1000ms;
+}
+.bg .item-0 {
+	background-image: url(./bg1.jpg);
+}
+.bg .item-1 {
+	background-image: url(./bg2.jpg);
+}
+.bg .item-2{
+	background-image: url(./bg3.jpg);
+}
+.bg .item-3 {
+	background-image: url(./bg4.jpg);
+}
+.bg .item-4 {
+	background-image: url(./bg5.jpg);
+}
+.bg .item-5{
+	background-image: url(./bg6.jpg);
+}

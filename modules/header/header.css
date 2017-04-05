@@ -1,0 +1,64 @@
+.header .logo-container {
+	height: 94px;
+	/*line-height也能对元素和img使用垂直居中？*/
+	line-height: 94px;
+}
+.header .logo-container img {
+	vertical-align: middle;
+}
+.header .logo-container ul {
+	float: right;
+}
+.header .logo-container ul li {
+	float: left;
+}
+.header .nav {
+	width: 100%;
+	height: 54px;
+}
+.header .nav .nav-item {
+	float: left;
+	height: 54px;
+	/*元素内容不确定，因此不能设置固定宽度，但是可以通过padding撑开*/
+	padding: 0 30px;
+	line-height: 54px;
+	position: relative;
+	border-right: 1px solid #b4b4b4;
+}
+.header .nav .nav-item:hover {
+	background: #fff;
+	cursor: pointer;
+}
+.header .nav .nav-item ul {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #fff;
+	width: 180px;
+	display: none;
+	z-index: 10;
+}
+.header .nav .nav-item li {
+	width: 150px;
+	margin: 0 auto;
+	height: 46px;
+	line-height: 46px;
+	border-bottom: 1px solid #b4b4b4;
+	z-index: 2;
+	/* text-indent: 3px; */
+}
+.header .nav .nav-item li a{
+	z-index: 10;
+}
+.header .nav .nav-item li:last-child {
+	border-bottom: none;
+}
+.header .nav a {
+	color: #666;
+	text-decoration: none;
+	font-size: 12px;
+}
+.header .nav a:hover {
+	color: #a74d62;
+	text-decoration: none;
+}
