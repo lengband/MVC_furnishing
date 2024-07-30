@@ -34,6 +34,11 @@ var root = process.cwd();
 
 var server = http.createServer(function(request, response) {
 	var pathname = decodeURIComponent(url.parse(request.url).pathname);
+    if (path.normalize(decodeURIComponent(url.parse(request.url).pathname)) !== decodeURIComponent(url.parse(request.url).pathname)) {
+        response.statusCode = 403;
+        response.end();
+        return;
+    }
 	var realPath = path.join(root, pathname);
 	var ext = path.extname(realPath);
 	if (!ext) {
